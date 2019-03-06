@@ -7,3 +7,10 @@ Shel\Neos\YoastSeo\Controller\DataController:
         arguments:
           1:
             value: ShelNeosYoastSeo_TranslationCache
+
+Shel\Neos\YoastSeo\Service\GoogleWebmasters:
+  arguments:
+    1:
+      object:
+        factoryObjectName: Flowpack\GoogleApiClient\Service\ClientFactory
+        factoryMethodName: create
